@@ -2,7 +2,7 @@
 
     font-size:6em;
     font-weight: bold;
-    background:url('../images/macro-view-clock-mechanism.jpg)';
+    background:url("../images/macro-view-clock-mechanism.jpg");
     background-attachment: fixed;
     background-size: cover;
     color: transparent;
