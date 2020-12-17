@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+body {
+
+font-family: 'IBM Plex Sans', sans-serif;
+font-size:15px;
+text-align:justify;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+font-family: 'Epilogue', sans-serif;
+
+}
+
+
+/* UTILS */
+
+
+
+.mon-bouton {
+
+    text-align:center;
+    padding: 10px;
+    margin:30px auto;
+    color:#FFFFFF;
+    width:30%;
+    border-radius:5px;
+    background:#e74c3c ;
+    box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7); 
+    animation:pulsation_bouton 2s ease-out infinite;
+    text-decoration:none;
+   
+}
+
+
+@keyframes pulsation_bouton {
+	
+from{
+	box-shadow:0 0 0 -3px hsla(0,0%,100%,0),0 0 0 0 rgba(255, 71, 84, 0.7)
+	
+	}
+to{
+	
+	box-shadow:0 0 0 10px hsla(0,0%,100%,0),0 0 0 13px hsla(0,0%,100%,0)}
+	
+	}
+
+
+/* FIN UTILS */
+
+/* MENU */
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color:  #363A47;
+    z-index: 7;}
+  
+    .menu__li {
+      float:left;
+      width: 33.33%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .menu__li--a {
+
+     width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction:row;
+      justify-content: space-around;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      font-size: 18px;
+      z-index: 9;
+    }
+
+    .menu__li--a:hover {
+    background-color: #e74c3c;
+}
+  
+
+/* MENU */
+
+/* FOOTER */
+
+
+footer {
+
+    width:100%;
+    height:100vh;
+    background:url(/images/macro-view-clock-mechanism.jpg) fixed  no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index:1000;
+
+
+}
+
+#formulaire {
+
+   
+    margin: auto;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-beetwenn;
+    align-items: center;
+    z-index: 1000;
+
+
+    
+}
+
+#formulaire h2 {
+
+    color: #e74c3C;
+    font-size:6vh;
+    writing-mode: vertical-rl;
+    margin:auto 20px;
+    transform: rotate(180deg); 
+    text-transform:uppercase;
+}
+
+#formulaire :nth-child(1) {
+
+
+    align-self: flex-start;
+}
+
+#formulaire :nth-child(2) {
+
+
+    align-self: center;
+    
+}
+
+form {
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;;
+    background-color: #e74c3c;
+    width: 40%;
+    padding: 1vh;
+    margin:auto;
+}
+
+::placeholder {
+
+    color:#fff;
+}
+
+input {
+
+    margin: 10px 0;
+    border:transparent;
+    border-bottom: solid 1px #fff;
+    background-color: #e74c3c;
+    color:#fff;
+    width:100%;
+    padding:20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+textarea {
+
+    margin: 10px;
+    border:transparent;
+    border-bottom: solid 1px #fff;
+    background-color: #e74c3c;
+    color:#fff;
+    width:100%;
+    padding:20px;
+    height:200px
+
+}
+
+input[type="submit"] {
+    border:1px solid #fff;
+    border-radius:5px;
+    width:50%;
+    padding:20px;
+    text-transform:uppercase;
+    font-weight: bold;
+
+}
+
+input[type="submit"]:hover {
+
+    background-color:#b14437 ;
+}
+
+/* FOOTER */

@@ -1,0 +1,157 @@
+.titre-bg-img {
+
+    font-size:6em;
+    font-weight: bold;
+    background:url(/images/macro-view-clock-mechanism.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip : text;
+    
+
+}
+
+/** HEADER */
+
+
+.grille-en-tete {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width:100%;
+    height:100vh;
+    background: url(/images/macro-view-clock-mechanism.jpg) fixed no-repeat;
+    background-size: cover;
+    
+    }
+    
+    .div1 { 
+        grid-area: 3 / 1 / 4 / 6; 
+        text-align:center; 
+        padding:5%; 
+        background-color: #fff;
+    }
+    
+    .div2 { 
+        grid-area: 1 / 1 / 3 / 4;
+        background-color:  #363A47;
+    
+    
+        
+    
+    
+    }
+    
+     
+    .div3 { 
+        grid-area: 4 / 3 / 6 / 6;
+        background-color:  #363A47;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+       
+    }
+    
+    .div3 h2,p {
+    
+        width:90%;
+        margin:10px;
+    }
+    
+    .div4 { 
+        grid-area: 1 / 4 / 3 / 6;
+        
+    
+          
+    }
+    
+    .div5 { 
+        grid-area: 4 / 1 / 6 / 3;
+        
+        
+    }
+
+/** FIN HEADER */
+    
+    
+    main {
+    
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+    
+    }
+
+    .presentation {
+
+        width:90%;
+        margin:20px auto;
+ 
+
+        
+    }
+    .presentation p{
+
+        width:100%; 
+    }
+
+    .presentation h2 {
+
+        text-align:center;
+        text-transform:uppercase;
+
+        
+    }
+    .div__photo {
+    
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .color-white {
+
+        color:white;
+    }
+    
+    .bg-gris {
+    
+        background-color: #e2e1e1;
+        
+    }
+    
+    .class-50 {
+    
+        width:50%;
+        height:500px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-content:center;
+        align-items: center;
+  
+    }
+
+    .class-50 h3{
+    
+        margin:30px;
+        text-transform: uppercase;
+        
+    }
+
+    .class-50 p{
+    
+        text-transform: uppercase;
+        text-align: center;
+        
+    }
+
