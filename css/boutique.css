@@ -1,6 +1,6 @@
 body {
 
-    background: url(/images/closeup-of-watch.jpg) fixed;
+    background: url('../images/closeup-of-watch.jpg') fixed;
     background-size: cover;
 }
 
